@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+
+.card {
+    width:  35rem;
+    max-width: 35rem;
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #0c1633;
+    box-shadow: -1px 4px 10px rgba(61, 61, 61, 0.5);
+}
+.photos-profile {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.background-img-container {
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+}
+.background-img-container img {
+    width: 100%;
+    object-fit: contain;
+}
+.img-profile-container {
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+    top: calc(100% - 14rem / 2);
+    left: calc(50% - 14rem / 2);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #121f3d;
+}
+.img-profile-container img {
+    width: 100%;
+}
+
+/* info-profile */
+.name {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 8.5rem 6rem 3rem 6rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.name-profile--container h1 {
+    font-size: 2.3rem;
+    line-height: 3rem;
+    font-weight: 500;
+    letter-spacing: .09rem;
+    color: rgba(255, 255, 255, 0.864);
+}
+.name-profile--container p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: .05rem;
+    color: rgba(255, 255, 255, 0.618);
+}
+
+
+.buttons-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.countriContact--container {
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+.countriContact--container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 5.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: #121f3d;
+    box-shadow: 2px 2px 5px rgba(209, 209, 209, 0.7);
+    cursor: pointer;
+}
+.countriContact--container > div span {
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: .7rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.countriContact--container > div .countri {
+    background-image: url('./assets/icons/map-marker_icon.svg');
+}
+.countriContact--container > div .email {
+    background-image: url('./assets/icons/inbox_icon.svg');
+}
+.countriContact--container > div p {
+    color: #687e9e;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    border: none;
+    color: #fff;
+}
+.followersFollowing-buttons--container {
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+}
+.followersFollowing-buttons--container button {
+    width: 50%;
+    box-shadow: 2px 2px 5px rgba(209, 209, 209, 0.7);
+    background-color: #121f3d;
+    color: #8c9aae;
+}
+
+.follow-button {
+    width: 100%;
+    height: 5.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    background-color: #98ca3f;
+}
