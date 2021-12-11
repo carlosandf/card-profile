@@ -8,14 +8,21 @@ html {
     font-size: 62.5%;
 }
 
-.card {
-    width:  35rem;
-    max-width: 35rem;
-    height: auto;
-    margin: 50px auto;
+.main-container {
+    height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width:  100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     overflow: hidden;
     background-color: #0c1633;
     box-shadow: -1px 4px 10px rgba(61, 61, 61, 0.5);
@@ -93,7 +100,7 @@ html {
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 5.5rem;
+    height: 6.5rem;
     font-size: 1.4rem;
     font-weight: 600;
     background-color: #121f3d;
@@ -126,7 +133,7 @@ button {
 }
 .followersFollowing-buttons--container {
     width: 100%;
-    height: 5.5rem;
+    height: 6.5rem;
     display: flex;
 }
 .followersFollowing-buttons--container button {
@@ -138,9 +145,19 @@ button {
 
 .follow-button {
     width: 100%;
-    height: 5.5rem;
+    height: 6.5rem;
     font-size: 1.6rem;
     font-weight: 600;
     letter-spacing: .1rem;
     background-color: #98ca3f;
+}
+
+
+@media (min-width: 400px) {
+    .card {
+        max-width: 36rem;
+        height: auto;
+        margin: 50px 0;
+        border-radius: 10px;
+    }
 }
